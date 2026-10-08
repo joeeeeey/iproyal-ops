@@ -1,5 +1,7 @@
 # IPRoyal Ops
 
+[![skills.sh](https://skills.sh/b/joeeeeey/iproyal-ops)](https://skills.sh/joeeeeey/iproyal-ops/iproyal-ops)
+
 An agent skill and Python CLI for inspecting IPRoyal proxy orders and preparing
 explicit, balance-funded purchases through the official dashboard API.
 
@@ -18,6 +20,26 @@ to run the tests.
 ## Requirements and installation
 
 Python 3.10+ and `curl` on macOS or Linux. No third-party Python dependencies.
+
+Install with the official [skills CLI](https://skills.sh/docs/cli) (requires Node.js/npm):
+
+```sh
+npx skills add joeeeeey/iproyal-ops --skill iproyal-ops
+```
+
+To select Codex or Claude Code explicitly:
+
+```sh
+npx skills add joeeeeey/iproyal-ops --skill iproyal-ops --agent codex
+npx skills add joeeeeey/iproyal-ops --skill iproyal-ops --agent claude-code
+```
+
+Installation is project-local by default; add `--global` for your user account.
+The CLI's default anonymous installation telemetry powers skills.sh discovery.
+Set `DISABLE_TELEMETRY=1` to opt out. Installing the skill does not configure an
+IPRoyal token, query your account, or purchase proxies.
+
+For standalone CLI use or manual skill installation:
 
 ```sh
 git clone https://github.com/joeeeeey/iproyal-ops.git
